@@ -52,7 +52,7 @@ export class NavBar extends React.Component {
         open: <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>,
      }
 
-     dropdownMenu: JSX.Element = (<div className="dropdown absolute left-0 top-full w-full bg-green-50">
+     dropdownMenu: JSX.Element = (<div className="dropdown absolute left-0 top-full w-full bg-white/80 backdrop-blur-sm z-50 rounded-sm shadow-lg">
                                     <ul className="flex flex-col gap-4 py-8 text-left p-4">
                                         {this.navs}
                                     </ul> 
