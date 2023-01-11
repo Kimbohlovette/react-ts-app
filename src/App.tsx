@@ -4,6 +4,7 @@ import { NavBar } from './NavBar';
 import Hero from './Hero';
 import Processes from './Processes';
 import Services from './Services';
+import ProductStories from './ProductStories';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Services />
         <Processes />
+        <ProductStories />
     </div>
   );
 }
