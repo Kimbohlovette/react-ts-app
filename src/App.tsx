@@ -8,7 +8,7 @@ import ProductStories from './ProductStories';
 
 function App() {
   return (
-    <div className="container mx-auto [&_*]:transition-all [&_*]:duration-200 [&_*]:ease-linear">
+    <div className="container mx-auto bg-[#F5F4F0] [&_*]:transition-all [&_*]:duration-200 [&_*]:ease-linear">
         <NavBar></NavBar>
         <Hero />
         <Services />
