@@ -67,7 +67,7 @@ export class NavBar extends React.Component {
     render(): React.ReactNode {
         return (
             <div className="px-8">
-                <div className="flex flex-row justify-between items-center border-b py-4 gap-4 relative">
+                <div className="flex flex-row justify-between items-center py-4 gap-4 relative">
                     <div className="logo hover:cursor-pointer">
                         <img src={logo} className="max-h-8 aspect-auto object-center object-cover w-auto"  alt="logo" />
                     </div>
