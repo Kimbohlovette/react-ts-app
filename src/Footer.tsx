@@ -1,3 +1,4 @@
+import footerBrand from './shared/footer-brand.png'
 export default function Footer(): JSX.Element{
     return (
         <div>
@@ -22,7 +23,7 @@ export default function Footer(): JSX.Element{
             </div>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-8">
                 <div>
-                    <img src="./assets/footer-brand.png" alt="" />
+                    <img src={footerBrand} alt="" />
                 </div>
                 <div className="py-4">
                     <ul className="flex flex-col xs:flex-row gap-y-2 gap-x-4 text-slate-50">

@@ -1,8 +1,8 @@
-import checkCircle from './shared/check-circle1.svg'
 import chairTablet from './shared/chair-tablet.png'
 import semiCircle from './shared/orange-half-circle-clipart.svg'
 import jumpingMan from './shared/man-jumping.png'
 import matrix from './shared/matrix-image.png'
+import { Icon } from '@iconify/react';
 
 export interface Story {
     heading: string
@@ -32,7 +32,7 @@ export default function ProductStories():JSX.Element {
             <li className="flex flex-row items-start py-2" key={key}>
             <div>
                 <div className="py-3 pr-4">
-                    <img src={checkCircle} className="h-8 aspect-square" alt="" />
+                <Icon icon="mingcute:check-circle-fill" color="green" height="24" />
                 </div>
             </div>
             <div className="">
@@ -110,36 +110,39 @@ export default function ProductStories():JSX.Element {
 
                         <div id="customers" className="absolute -bottom-16 -left-4">
                             <div className="flex flex-col items-center p-1 bg-white rounded-sm w-fit">
-                                <span className="p-1 my-2 bg-orange-400 hover:bg-orange-600  transition-colors duration-300 ease-linear rounded-full drop-shadow-sm text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" style={{verticalAlign: "-0.125em"}} width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                <span className="p-1 my-2 bg-orange-400 hover:[transform:_scale(1.2)] transition-transform duration-300 ease-linear rounded-full drop-shadow-sm text-white">
+                                    <Icon icon="mdi:user" color="white" />
                                 </span>
                                 <div>
                                     <h1 className="font-bold font-slate-800 text-sm">31950+</h1>
                                     <p className="text-sm text-slate-400 text-[10px]">Customers</p>
                                 </div>
                                 <div id="avatars" className="flex flex-row gap-[1px] my-1 text-[9px]">
-                                    <div className="border rounded-full bg-orange-100 hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 p-1">
+                                    <div className="border rounded-full bg-orange-400 hover:[transform:_scale(1.2)] hover:text-white transition-transform duration-300 ease-linear text-slate-500 p-1">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" style={{verticalAlign: "-0.125em"}}  width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                            <Icon icon="mdi:user" color="white" />
                                         </span>
                                     </div>
-                                    <div className="border rounded-full bg-orange-100 hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 p-1">
+                                    <div className="border rounded-full bg-orange-400 hover:[transform:_scale(1.2)] hover:text-white transition-transform duration-300 ease-linear text-slate-500 p-1">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" style={{verticalAlign: "-0.125em"}}  width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                            <Icon icon="mdi:user" color="white" />
+                                        </span>
+                                            
+                                    </div>
+                                    <div className="border rounded-full bg-orange-400 hover:[transform:_scale(1.2)] hover:text-white transition-transform duration-300 ease-linear text-slate-500 p-1">
+                                        <span>
+                                            <Icon icon="mdi:user" color="white" />
                                         </span>
                                     </div>
-                                    <div className="border rounded-full bg-orange-100 hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 p-1">
+                                    <div className="border rounded-full bg-orange-400 hover:[transform:_scale(1.2)] hover:text-white transition-transform duration-300 ease-linear text-slate-500 p-1">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" style={{verticalAlign: "-0.125em"}}  width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                            <Icon icon="mdi:user" color="white" />
                                         </span>
                                     </div>
-                                    <div className="border rounded-full bg-orange-100 hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 p-1">
+                                    <div className="border rounded-full bg-orange-400 hover:[transform:_scale(1.2)] hover:text-white transition-transform duration-300 ease-linear text-slate-500 p-1">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" style={{verticalAlign: "-0.125em"}}  width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm-8 8v-2.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2V20Zm2-2h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/></svg>
+                                            <Icon icon="ic:baseline-plus" color="white" />
                                         </span>
-                                    </div>
-                                    <div className="border rounded-full bg-white text-bold hover:bg-orange-400 hover:text-white transition-colors duration-300 ease-linear text-slate-500 text-center px-1.5">
-                                        <span>+</span>
                                     </div>
                                 </div>
                             </div>
