@@ -1,12 +1,12 @@
 import React from "react";
 import johnsmith from "./shared/JOHN_SMITH.png"
-// import manreading from "./shared/businessman.png"
+import manreading from "./shared/businessman.png"
 
 export default class Hero extends React.Component {
 
     render(): React.ReactNode {
         return (
-            <div className="flex flex-col sm:flex-row gap-4 p-4 py-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2  gap-4 p-4 py-8 bg-green-800">
                 <HeroText />
                 <HeroImage />
             </div>
@@ -17,9 +17,9 @@ export default class Hero extends React.Component {
 class HeroText extends React.Component {
     render(): React.ReactNode {
         return (
-            <div className="flex-1 text-left bg-green-800 px-4 py-8">
+            <div className="flex-1 text-left py-8 px-4 xs:px-8 sm:px-10 lg:px-28 w-full">
                 <div className="">
-                    <h1 className="text-5xl text-slate-50 font-black sm:w-full">Shopify Products</h1>
+                    <h1 className="text-slate-50 font-black sm:w-full text-5xl lg:text-8xl  font-lexend py-2">Shopify Products</h1>
                     <p className="text-slate-50 font-semibold my-2 max-w-xs">
                         More than 8000 companies trust our business.
                     </p>
@@ -46,15 +46,13 @@ class HeroText extends React.Component {
 class HeroImage extends React.Component {
     render(): React.ReactNode {
         return (
-            <div className="flex-1 text-left p-4">
-                {/* <div className="relative bg-white w-full">
-                    <div className="absolute right-0 bg-orange-600 object-cover aspect-square max-h-[12rem]">
-                        <img src={manreading} alt="man-reading" className="object-cover object-center h-full w-auto"/>
-                    </div>
-                    <div className="absolute right-1/3 top-3/4 bg-green-800 object-cover aspect-square max-h-[12rem] flex flex-col items-center justify-center">
-                        <p className="text-slate-50 font-light text-sm text-center w-3/4 translate-y-3/4">Install the app. You are just a click away to convert.</p>
-                    </div>
-                </div> */}
+            <div className="flex-1 text-left p-4 relative flex flex-col items-center justify-center">
+                <div className="translate-x-1/4 bg-orange-600 w-1/2 aspect-square h-fit z-50 relative">
+                    <img src={manreading} className="" alt="" />
+                </div>
+                <div className="-translate-y-1/2 bg-green-900/100 w-1/2 aspect-square h-fit z-10 relative">
+                    <p className="absolute bottom-0 left-0 text-center text-xs sm:text-sm text-slate-50 italic p-4">Install the app. You are just a click to convert</p>
+                </div>
             </div>
                 
         )

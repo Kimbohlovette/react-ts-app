@@ -47,9 +47,9 @@ export default function ProductStories():JSX.Element {
     return (
         <div>
              <section className="py-8 px-4 xs:px-8 sm:px-10 lg:px-28 w-full">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
                 <div className="flex-1">
-                    <h1 className="py-8 text-2xl lg:text-5xl lg:w-2/3 lg:leading-snug  text-lexend text-slate-800 font-bold">Why product stories? learn more</h1>
+                    <h1 className="py-8 text-2xl md:text-5xl md:w-5/6 lg:leading-snug  text-lexend text-slate-800 font-bold">Why product stories? learn more</h1>
                     <ul className="stories">
                         {renderStories}
                     </ul>
